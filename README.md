@@ -1,7 +1,7 @@
-# Online Banking Management System
-- An online banking management system that allows users to manage their accounts, 
-perform transactions, and access various financial services securely. 
-- The application features a robust backend built with Spring Boot, efficient data storage managed using MySQL 
+# Online Food Ordering Website
+- An online food ordering system that lets users browse menus, place orders,
+-  make secure payments, and track their orders in real-time.
+- The application features a robust backend built with Spring Boot, frontend with React.Js, redux for state management, efficient data storage managed using MySQL 
 and is deployed using Docker containers to ensure consistency across environments.
 
 ## Table of Contents
