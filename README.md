@@ -104,9 +104,27 @@ spring.datasource.password=your_mysql_password
 ![DB Image](https://res.cloudinary.com/dxfn9epwh/image/upload/v1725342370/v/cip7wwfsdvati6gvdgrz.png)
 
 The MySQL database consists of the following tables:
-- users: Stores user information such as user ID, username, password, and contact details.
-- accounts: Stores account details including account ID, user ID, account type, and balance.
-- transactions: Stores transaction records with transaction ID, account ID, transaction type, amount, and timestamp.
+- users: Stores customer and restaurant owner details like username, password, contact info, roles, etc.
+
+- address: Contains delivery or billing addresses linked to users.
+
+- cart: Represents a user's cart session, tracking items before order placement.
+
+- cart_item: Line items within the cart, with quantity and linked food IDs.
+
+- category: Defines different categories for food items (e.g., Pizza, Drinks).
+
+- event: Stores promotional or seasonal events (e.g., discounts, offers).
+
+- food: Contains food item details such as name, price, description, and category.
+
+- food_images: Stores image metadata or URLs for food items.
+
+- food_ingredients: Links food items with their ingredients (many-to-many relationship).
+
+- ingredients: List of all ingredients used in recipes.
+
+- ingredients_category: Categorizes ingredients (e.g., Veg, Non-Veg, Dairy).
 
 ## Contributing
 Contributions are welcome! Please follow these steps:
