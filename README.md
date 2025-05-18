@@ -16,10 +16,23 @@ and is deployed using Docker containers to ensure consistency across environment
 
 
 ## Features
-- User Management: Users can create accounts, log in, and manage their profiles.
-- Account Management: Users can view account details, check balances, and manage multiple accounts.
-- Transactions: Users can perform deposits, withdrawals, and transfers between accounts.
-- Transaction History: Users can view a history of all transactions.
+- User Management: Users can sign up, log in, and manage their profiles securely using JWT-based authentication.
+
+- Role-Based Access Control: Separate access for Restaurant Owners and Customers to enhance security and personalize user experience.
+
+- Restaurant & Menu Browsing: Customers can explore restaurants, browse dynamic menus, and view food items with details.
+
+- Cart & Order Placement: Add items to cart, update quantities, and place real-time orders with instant feedback.
+
+- Payment Integration: Integrated with Stripe API to handle secure and smooth online payments.
+
+- Order Tracking: Customers can track the status of their orders post-placement.
+
+- Admin/Owner Dashboard: Restaurant owners can manage menu items, view orders, and track customer interactions.
+
+- State Management: Redux used to maintain consistent state across components and ensure smooth UI/UX.
+
+- Responsive UI: Built with React.js and Material UI for a user-friendly experience across devices.
 
 ## Tech Stack
 - Backend: Spring Boot
