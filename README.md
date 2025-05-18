@@ -1,79 +1,78 @@
 # Online Food Ordering Website
-- An online food ordering system that lets users browse menus, place orders,
--  make secure payments, and track their orders in real-time.
-- The application features a robust backend built with Spring Boot, frontend with React.Js, redux for state management, efficient data storage managed using MySQL 
-and is deployed using Docker containers to ensure consistency across environments.
+
+An intuitive online platform for browsing menus, placing food orders, and tracking delivery in real-time. The system supports secure user authentication, role-based access control, payment integration, and real-time order tracking.
+
+---
 
 ## Table of Contents
 
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Architecture](#architecture)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Database Design](#database-design)
-- [Contributing](#contributing)
+- [Features](#features)  
+- [Tech Stack](#tech-stack)  
+- [Architecture](#architecture)  
+- [Installation](#installation)  
+- [Usage](#usage)  
+- [Database Design](#database-design)  
+- [Contributing](#contributing)  
+- [License](#license)  
 
+---
 
 ## Features
-- User Management: Users can sign up, log in, and manage their profiles securely using JWT-based authentication.
 
-- Role-Based Access Control: Separate access for Restaurant Owners and Customers to enhance security and personalize user experience.
+- **User Management**: Users can sign up, log in, and securely manage their profiles using JWT authentication.  
+- **Role-Based Access Control**: Different access levels for Restaurant Owners and Customers to personalize experiences and improve security.  
+- **Restaurant & Menu Browsing**: Browse restaurants and dynamically view their menus and food item details.  
+- **Cart & Order Placement**: Add items to cart, update quantities, and place orders with instant confirmation.  
+- **Payment Integration**: Secure payments handled through Stripe API.  
+- **Order Tracking**: Real-time status updates for orders post-placement.  
+- **Admin/Owner Dashboard**: Restaurant owners can manage menus, view orders, and monitor customer interactions.  
+- **State Management**: Redux ensures consistent application state across components.  
+- **Responsive UI**: Built with React.js and Material UI to deliver smooth, user-friendly experiences on all devices.
 
-- Restaurant & Menu Browsing: Customers can explore restaurants, browse dynamic menus, and view food items with details.
-
-- Cart & Order Placement: Add items to cart, update quantities, and place real-time orders with instant feedback.
-
-- Payment Integration: Integrated with Stripe API to handle secure and smooth online payments.
-
-- Order Tracking: Customers can track the status of their orders post-placement.
-
-- Admin/Owner Dashboard: Restaurant owners can manage menu items, view orders, and track customer interactions.
-
-- State Management: Redux used to maintain consistent state across components and ensure smooth UI/UX.
-
-- Responsive UI: Built with React.js and Material UI for a user-friendly experience across devices.
+---
 
 ## Tech Stack
-- Frontend: React.js, Material UI, Redux, React Router
 
-- Backend: Spring Boot (RESTful APIs)
+- **Frontend**: React.js, Material UI, Redux, React Router  
+- **Backend**: Spring Boot (RESTful APIs)  
+- **Database**: MySQL  
+- **Authentication**: JWT (Role-based)  
+- **Payments**: Stripe API  
+- **State Management**: Redux  
+- **Build & Deployment**: Docker
 
-- Database: MySQL
-
-- Authentication: JWT (Role-based access for Restaurant Owners and Customers)
-
-- Payments: Stripe API (for secure online transactions)
-
-- State Management: Redux
-
-- Build & Deployment: Docker 
+---
 
 ## Architecture
-The system is designed with a focus on scalability and security, using a layered architecture:
-- Frontend: Developed with React.js, using Material UI for UI components and Redux for state management. Handles user interactions, order placement, and real-time updates via API calls.
 
-- Backend: Built with Spring Boot, it manages business logic such as user authentication, role-based access (Customer & Restaurant Owner), order processing, and menu management. Exposes RESTful APIs for frontend communication.
+The system follows a layered architecture to ensure scalability, maintainability, and security:
 
-- Authentication: Implemented JWT-based authentication to ensure secure, role-restricted access for different user types.
+- **Frontend**: React.js app uses Material UI components and Redux for state management. Communicates with backend REST APIs for all data.  
+- **Backend**: Spring Boot REST API handles authentication, authorization, order processing, menu management, and payment integration.  
+- **Authentication**: JWT tokens are used for stateless, secure user sessions with role-based access controls (Customer, Owner).  
+- **Database**: MySQL stores persistent data, including users, orders, menus, payments, and more.  
+- **Payment Processing**: Stripe API integration facilitates secure, real-time payment transactions.  
+- **Deployment**: Docker containers used for consistent environment setup and deployment.
 
-- Database: Utilizes MySQL to store structured data like users, orders, food items, and transactions with high reliability and consistency.
-
-- Payment Integration: Integrated with Stripe API for secure, real-time payment processing.
+---
 
 ## Installation
-Follow these steps to set up the project locally:
 
-## Prerequisites
-- Java Development Kit (JDK)
-- MySQL
-  
+### Prerequisites
 
-## Backend Setup
-  1. Clone the repository:
-   
-  `git clone https://github.com/your_username/food-website.git
-cd food-website`
+- Java Development Kit (JDK 11 or later)  
+- MySQL Server (version 8 recommended)  
+- Node.js and npm (for frontend)  
+- Docker (optional, for containerized deployment)
+
+### Backend Setup
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your_username/food-website.git
+cd food-website
+```
   
   2. Navigate to the backend directory and build the Spring Boot application:
 
