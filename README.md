@@ -106,7 +106,7 @@ spring.datasource.password=your_mysql_password
 -->
 
 
-The MySQL database consists of the following tables:
+## The MySQL database consists of the following tables:
 - users: Stores customer and restaurant owner details like username, password, contact info, roles, etc.
 
 - address: Contains delivery or billing addresses linked to users.
