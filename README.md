@@ -72,8 +72,8 @@ Follow these steps to set up the project locally:
 ## Backend Setup
   1. Clone the repository:
    
-  `git clone [https://github.com/your_username/food-website.git]
-  cd food-website`
+  `git clone https://github.com/your_username/food-website.git
+cd food-website`
   
   2. Navigate to the backend directory and build the Spring Boot application:
 
@@ -86,10 +86,10 @@ Follow these steps to set up the project locally:
 
 ## Database Setup
 1. Create a MySQL database:
-`CREATE DATABSE banking;`
+`CREATE DATABASE food_app;`
 
 2. Update the database configuration in the application.properties:
-`spring.datasource.url=jdbc:mysql://localhost:3306/banking_db
+`spring.datasource.url=jdbc:mysql://localhost:3306/food_app
 spring.datasource.username=your_mysql_username
 spring.datasource.password=your_mysql_password`
 
