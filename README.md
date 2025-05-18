@@ -51,9 +51,15 @@ and is deployed using Docker containers to ensure consistency across environment
 
 ## Architecture
 The system is designed with a focus on scalability and security, using a layered architecture:
-- Backend: Built using Spring Boot, the backend handles all business logic, including user authentication, account management, and transaction processing. It exposes RESTful APIs for communication.
-- Database: MySQL is used to securely store user, account, and transaction data, ensuring data integrity and efficient access.
-- Docker: The application is containerized using Docker to provide consistent environments across development, testing, and production.
+- Frontend: Developed with React.js, using Material UI for UI components and Redux for state management. Handles user interactions, order placement, and real-time updates via API calls.
+
+- Backend: Built with Spring Boot, it manages business logic such as user authentication, role-based access (Customer & Restaurant Owner), order processing, and menu management. Exposes RESTful APIs for frontend communication.
+
+- Authentication: Implemented JWT-based authentication to ensure secure, role-restricted access for different user types.
+
+- Database: Utilizes MySQL to store structured data like users, orders, food items, and transactions with high reliability and consistency.
+
+- Payment Integration: Integrated with Stripe API for secure, real-time payment processing.
 
 ## Installation
 Follow these steps to set up the project locally:
