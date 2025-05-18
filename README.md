@@ -76,13 +76,13 @@ cd food-website
   
   2. Navigate to the backend directory and build the Spring Boot application:
 ```bash
-  `cd backend
-  ./mvnw clean install`
+  cd backend
+  ./mvnw clean install
 ```
   
   3. Start the backend server:
   ```bash   
-  `./mvnw spring-boot:run`
+  ./mvnw spring-boot:run
   ```
 
 ## Database Configuration
