@@ -92,6 +92,8 @@ Update the `application.properties` file in the backend:
 spring.datasource.url=jdbc:mysql://localhost:3306/food_app
 spring.datasource.username=your_mysql_username
 spring.datasource.password=your_mysql_password
+```
+
 
 ## Usage
 - Use an API testing tool like Postman to interact with the backend services.
