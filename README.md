@@ -35,9 +35,19 @@ and is deployed using Docker containers to ensure consistency across environment
 - Responsive UI: Built with React.js and Material UI for a user-friendly experience across devices.
 
 ## Tech Stack
-- Backend: Spring Boot
+- Frontend: React.js, Material UI, Redux, React Router
+
+- Backend: Spring Boot (RESTful APIs)
+
 - Database: MySQL
-- Containerization: Docker
+
+- Authentication: JWT (Role-based access for Restaurant Owners and Customers)
+
+- Payments: Stripe API (for secure online transactions)
+
+- State Management: Redux
+
+- Build & Deployment: Docker 
 
 ## Architecture
 The system is designed with a focus on scalability and security, using a layered architecture:
