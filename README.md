@@ -67,13 +67,13 @@ Follow these steps to set up the project locally:
 ## Prerequisites
 - Java Development Kit (JDK)
 - MySQL
-- Docker
+  
 
 ## Backend Setup
   1. Clone the repository:
    
-  `git clone https://github.com/your-username/online-banking-management-system.git
-  cd online-banking-management-system`
+  `git clone [https://github.com/your_username/food-website.git]
+  cd food-website`
   
   2. Navigate to the backend directory and build the Spring Boot application:
 
