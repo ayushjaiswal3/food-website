@@ -101,8 +101,10 @@ spring.datasource.password=your_mysql_password
 - Register a new user account or log in with existing credentials via the API.
 - Use API endpoints to manage accounts, perform transactions, and view transaction history.
 
-## Database Design
+<!--
 ![DB Image](https://res.cloudinary.com/dxfn9epwh/image/upload/v1725342370/v/cip7wwfsdvati6gvdgrz.png)
+-->
+
 
 The MySQL database consists of the following tables:
 - users: Stores customer and restaurant owner details like username, password, contact info, roles, etc.
