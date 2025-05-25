@@ -38,7 +38,6 @@ An intuitive online platform for browsing menus, placing food orders, and tracki
 - **Authentication**: JWT (Role-based)  
 - **Payments**: Stripe API  
 - **State Management**: Redux  
-- **Build & Deployment**: Docker
 
 ---
 
