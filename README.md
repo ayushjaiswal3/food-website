@@ -105,43 +105,29 @@ spring.datasource.password=your_mysql_password
 ![DB Image](https://res.cloudinary.com/dxfn9epwh/image/upload/v1725342370/v/cip7wwfsdvati6gvdgrz.png)
 -->
 
-## DATABASE
-# The MySQL database consists of the following tables:
-- **users**: Stores customer and restaurant owner details like username, password, contact info, and roles.
+##  DATABASE
 
-- **address**: Contains delivery or billing addresses linked to users.
+The MySQL database consists of the following tables:
 
-- **cart**: Represents a user's shopping cart before order placement.
+- **users**: Stores customer and restaurant owner details like username, password, contact info, and roles.  
+- **address**: Contains delivery or billing addresses linked to users.  
+- **cart**: Represents a user's shopping cart before placing an order.  
+- **cart_item**: Tracks food items and quantities inside a user's cart.  
+- **category**: Defines different food categories like Pizza, Drinks, etc.  
+- **event**: Stores promotional or seasonal events like offers and discounts.  
+- **food**: Contains details of food items such as name, price, and category.  
+- **food_images**: Holds image URLs or metadata for food item visuals.  
+- **food_ingredients**: Manages many-to-many relationships between food items and ingredients.  
+- **ingredients**: Lists individual ingredients used in food preparation.  
+- **ingredients_category**: Categorizes ingredients as Veg, Non-Veg, Dairy, etc.  
+- **order**: Stores customer order details including status and payment.  
+- **order_item**: Contains food items included in each order with quantities.  
+- **restaurant**: Stores data about partner restaurants including name and location.  
+- **review**: Holds user reviews and ratings for food or restaurants.  
+- **subscription**: Manages user subscription details like start and end dates.  
+- **subscription_plan**: Defines available subscription types (e.g., Basic, Premium).  
+- **subscription_status**: Tracks the current state of a user’s subscription (Active, Expired).
 
-- **cart_item**: Tracks individual food items and quantities in a cart.
-
-- **category**: Defines various food categories like Pizza, Drinks, etc.
-
-- **event**: Holds promotional or seasonal event details like offers and discounts.
-
-- **food**: Stores food item details such as name, price, description, and category.
-
-- **food_images**: Contains image URLs or metadata for food items.
-
-- **food_ingredients**: Manages many-to-many mapping between food and ingredients.
-
-- **ingredients**: Lists all individual ingredients used in food items.
-
-- **ingredients_category**: Categorizes ingredients as Veg, Non-Veg, Dairy, etc.
-
-- **order**: Stores details of customer orders including status and payment.
-
-- **order_item**: Contains individual food items within an order.
-
-- **restaurant**: Stores information about partnered restaurants.
-
-- **review**: Holds user-generated ratings and reviews for food items or restaurants.
-
-- **subscription**: Manages user subscription status with start and end dates.
-
-- **subscription_plan**: Defines available subscription plans like Basic or Premium.
-
-- **subscription_status**: Tracks current state of a user's subscription.
   
 ## Contributing
 Contributions are welcome! Please follow these steps:
