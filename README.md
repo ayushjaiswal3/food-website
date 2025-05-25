@@ -11,7 +11,7 @@ An intuitive online platform for browsing menus, placing food orders, and tracki
 - [Architecture](#architecture)  
 - [Installation](#installation)  
 - [Usage](#usage)  
-- [Database Design](#database-design)  
+- [Database](#database)  
 - [Contributing](#contributing)  
 - [License](#license)  
 
@@ -105,30 +105,44 @@ spring.datasource.password=your_mysql_password
 ![DB Image](https://res.cloudinary.com/dxfn9epwh/image/upload/v1725342370/v/cip7wwfsdvati6gvdgrz.png)
 -->
 
+## DATABASE
+# The MySQL database consists of the following tables:
+- **users**: Stores customer and restaurant owner details like username, password, contact info, and roles.
 
-## The MySQL database consists of the following tables:
-- users: Stores customer and restaurant owner details like username, password, contact info, roles, etc.
+- **address**: Contains delivery or billing addresses linked to users.
 
-- address: Contains delivery or billing addresses linked to users.
+- **cart**: Represents a user's shopping cart before order placement.
 
-- cart: Represents a user's cart session, tracking items before order placement.
+- **cart_item**: Tracks individual food items and quantities in a cart.
 
-- cart_item: Line items within the cart, with quantity and linked food IDs.
+- **category**: Defines various food categories like Pizza, Drinks, etc.
 
-- category: Defines different categories for food items (e.g., Pizza, Drinks).
+- **event**: Holds promotional or seasonal event details like offers and discounts.
 
-- event: Stores promotional or seasonal events (e.g., discounts, offers).
+- **food**: Stores food item details such as name, price, description, and category.
 
-- food: Contains food item details such as name, price, description, and category.
+- **food_images**: Contains image URLs or metadata for food items.
 
-- food_images: Stores image metadata or URLs for food items.
+- **food_ingredients**: Manages many-to-many mapping between food and ingredients.
 
-- food_ingredients: Links food items with their ingredients (many-to-many relationship).
+- **ingredients**: Lists all individual ingredients used in food items.
 
-- ingredients: List of all ingredients used in recipes.
+- **ingredients_category**: Categorizes ingredients as Veg, Non-Veg, Dairy, etc.
 
-- ingredients_category: Categorizes ingredients (e.g., Veg, Non-Veg, Dairy).
+- **order**: Stores details of customer orders including status and payment.
 
+- **order_item**: Contains individual food items within an order.
+
+- **restaurant**: Stores information about partnered restaurants.
+
+- **review**: Holds user-generated ratings and reviews for food items or restaurants.
+
+- **subscription**: Manages user subscription status with start and end dates.
+
+- **subscription_plan**: Defines available subscription plans like Basic or Premium.
+
+- **subscription_status**: Tracks current state of a user's subscription.
+  
 ## Contributing
 Contributions are welcome! Please follow these steps:
 1. Fork the repository.
