@@ -13,7 +13,6 @@ An intuitive online platform for browsing menus, placing food orders, and tracki
 - [Usage](#usage)  
 - [Database](#database)  
 - [Contributing](#contributing)  
-- [License](#license)  
 
 ---
 
