@@ -61,7 +61,6 @@ The system follows a layered architecture to ensure scalability, maintainability
 - Java Development Kit (JDK 11 or later)  
 - MySQL Server (version 8 recommended)  
 - Node.js and npm (for frontend)  
-- Docker (optional, for containerized deployment)
 
 ### Backend Setup
 
