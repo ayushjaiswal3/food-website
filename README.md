@@ -109,24 +109,22 @@ spring.datasource.password=your_mysql_password
 
 The MySQL database consists of the following tables:
 
-- **users**: Stores customer and restaurant owner details like username, password, contact info, and roles.  
-- **address**: Contains delivery or billing addresses linked to users.  
-- **cart**: Represents a user's shopping cart before placing an order.  
-- **cart_item**: Tracks food items and quantities inside a user's cart.  
-- **category**: Defines different food categories like Pizza, Drinks, etc.  
-- **event**: Stores promotional or seasonal events like offers and discounts.  
-- **food**: Contains details of food items such as name, price, and category.  
-- **food_images**: Holds image URLs or metadata for food item visuals.  
-- **food_ingredients**: Manages many-to-many relationships between food items and ingredients.  
-- **ingredients**: Lists individual ingredients used in food preparation.  
-- **ingredients_category**: Categorizes ingredients as Veg, Non-Veg, Dairy, etc.  
-- **order**: Stores customer order details including status and payment.  
-- **order_item**: Contains food items included in each order with quantities.  
-- **restaurant**: Stores data about partner restaurants including name and location.  
-- **review**: Holds user reviews and ratings for food or restaurants.  
-- **subscription**: Manages user subscription details like start and end dates.  
-- **subscription_plan**: Defines available subscription types (e.g., Basic, Premium).  
-- **subscription_status**: Tracks the current state of a user’s subscription (Active, Expired).
+- **Address**: Represents user delivery or billing address details linked to a user.
+- **Cart**: Stores a user's current shopping cart and associated items before order placement.
+- **CartItem**: Represents individual food items and their quantities inside a cart.
+- **Category**: Defines different categories for food items, like Pizza, Drinks, etc.
+- **ContactInformation**: Stores additional user contact details such as phone numbers and emails.
+- **Event**: Represents promotional or seasonal events offering discounts or special offers.
+- **Food**: Contains detailed information about food items including name, price, and description.
+- **IngredientCategory**: Categorizes ingredients into groups such as Veg, Non-Veg, or Dairy.
+- **IngredientsItem**: Represents individual ingredients used in food recipes.
+- **Order**: Records order details including user, status, total price, and payment info.
+- **OrderItem**: Stores specific food items and quantities within an order.
+- **Restaurant**: Contains data about partner restaurants including name, location, and contact.
+- **Review**: Holds user-submitted ratings and textual reviews for food or restaurants.
+- **USER_ROLE**: Defines different user roles such as Customer, Restaurant Owner, or Admin.
+- **User**: Stores user account information including login credentials, roles, and profile data.
+
 
   
 ## Contributing
