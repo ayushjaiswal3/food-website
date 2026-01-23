@@ -63,37 +63,7 @@ The platform follows a **layered architecture** to ensure scalability, maintaina
 
 ---
 
-### 📂 Repository Structure
 
-
-```text
-food-website/
-├── backend/
-│   ├── README.md
-│   ├── application-sample.properties
-│   ├── Dockerfile
-│   └── docs/
-│       ├── api-spec.md
-│       ├── auth-flow.md
-│       └── order-lifecycle.md
-│
-├── frontend/
-│   ├── README.md
-│   └── docs/
-│       └── ui-flow.md
-│
-├── database/
-│   ├── schema.sql
-│   ├── er-diagram.png
-│   └── README.md
-│
-├── docker-compose.yml
-├── CHANGELOG.md
-└── README.md
-
-
-
----
 
 ## 🔐 Authentication & Authorization
 
@@ -150,8 +120,36 @@ Relational constraints ensure data consistency and integrity.
 - Node.js (for frontend)
 - Docker (optional)
 
-### Backend
-```bash
-cd backend
-./mvnw clean install
-./mvnw spring-boot:run
+### 📂 Repository Structure
+
+
+```text
+food-website/
+├── backend/
+│   ├── README.md
+│   ├── application-sample.properties
+│   ├── Dockerfile
+│   └── docs/
+│       ├── api-spec.md
+│       ├── auth-flow.md
+│       └── order-lifecycle.md
+│
+├── frontend/
+│   ├── README.md
+│   └── docs/
+│       └── ui-flow.md
+│
+├── database/
+│   ├── schema.sql
+│   ├── er-diagram.png
+│   └── README.md
+│
+├── docker-compose.yml
+├── CHANGELOG.md
+└── README.md
+
+
+
+
+
+
