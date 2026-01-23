@@ -1,9 +1,11 @@
 # SaaS Order Management Platform  
 
 A **role-based SaaS backend platform** designed to support **multi-user transactional workflows** for online food ordering.  
-The system emphasizes **security, authorization boundaries, transactional integrity, and scalable backend design**, aligned with real-world enterprise SaaS applications.
+Designed as a backend-first system inspired by real-world order and payment processing platforms.
 
-This repository demonstrates **backend engineering ownership**, system design thinking, and SDLC-driven development practices commonly used in large-scale product organizations.
+The system emphasizes **security, authorization boundaries, transactional integrity, and scalable backend design**, aligned with enterprise SaaS applications.
+
+This repository demonstrates **backend engineering ownership**, system design thinking, and SDLC-driven development practices used in large-scale product organizations.
 
 ---
 
@@ -57,32 +59,33 @@ The platform follows a **layered architecture** to ensure scalability, maintaina
 ### Deployment
 - Docker-based containerization
 - Environment-based configuration
-- Cloud-ready architecture
+- Designed to support horizontal scaling through stateless services
 
 ---
 
-## 📂 Repository Structure
+### 📂 Repository Structure
 
+
+```text
 food-website/
-│
 ├── backend/
-│ ├── README.md
-│ ├── application-sample.properties
-│ ├── Dockerfile
-│ └── docs/
-│ ├── api-spec.md
-│ ├── auth-flow.md
-│ └── order-lifecycle.md
+│   ├── README.md
+│   ├── application-sample.properties
+│   ├── Dockerfile
+│   └── docs/
+│       ├── api-spec.md
+│       ├── auth-flow.md
+│       └── order-lifecycle.md
 │
 ├── frontend/
-│ ├── README.md
-│ └── docs/
-│ └── ui-flow.md
+│   ├── README.md
+│   └── docs/
+│       └── ui-flow.md
 │
 ├── database/
-│ ├── schema.sql
-│ ├── er-diagram.png
-│ └── README.md
+│   ├── schema.sql
+│   ├── er-diagram.png
+│   └── README.md
 │
 ├── docker-compose.yml
 ├── CHANGELOG.md
